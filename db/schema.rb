@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20160617060046) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "area"
+    t.string   "user_profile"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
